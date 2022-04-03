@@ -2,6 +2,7 @@ export default function Home({ data }) {
   console.log(data)
   return (
     <div>
+    {/* added font and the link is to the _document.js */}
     <style jsx>{`
         h2 {
           color: red;
