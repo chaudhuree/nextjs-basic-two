@@ -2,6 +2,7 @@ export default function Home({ data }) {
   console.log(data)
   return (
     <div>
+    
     {/* added font and the link is to the _document.js */}
     <style jsx>{`
         h2 {
@@ -15,7 +16,7 @@ export default function Home({ data }) {
     </div>
   )
 }
-
+// client side rendering
 export async function getStaticProps() {
   // Data Fetching
   const res = await fetch("https://jsonplaceholder.typicode.com/posts/5")
@@ -27,6 +28,7 @@ export async function getStaticProps() {
   }
 }
 
+// server side rendering
 // export async function getServerSideProps() {
 //   // Data Fetching
 //   const res = await fetch("https://jsonplaceholder.typicode.com/posts/7")
